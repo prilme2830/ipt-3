@@ -11,6 +11,9 @@ Route::get('/category', function () {
     return view('category');
 })-> name('category');
 
+  Route::get('/', function () {
+    return view('');
+  })->name('');
 
 Route::get('/product', function () {
     return view('product');
